@@ -14,6 +14,7 @@ class Food(Turtle):
         self.shapesize(stretch_wid=0.6, stretch_len=0.6)
         self.refresh()
 
+  # Refreshes to a newer coordinate
     def refresh(self):
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)

@@ -12,7 +12,7 @@ class Score(Turtle):
         self.score_int = 0
         self.penup()
         self.hideturtle()
-        self.goto(0, 260)  # move to top center of screen
+        self.goto(0, 260)       # move to top center of screen
         self.color("white")
         self.update_scoreboard()
         self.hideturtle()

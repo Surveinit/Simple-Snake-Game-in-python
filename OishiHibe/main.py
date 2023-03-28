@@ -11,7 +11,7 @@ screen.title("OishiHibe")
 screen.listen()
 screen.tracer(0)
 
-# user input **DIFFICULTY**
+# user input takes float **DIFFICULTY**
 user_input = float(
     screen.textinput(title="Difficulty", prompt="0.1, 0.5, 1 which difficulty you can bear? Lesser the harder"))
 print(user_input)
@@ -32,18 +32,18 @@ game_on = True
 
 while game_on:
     screen.update()
-    time.sleep(user_input)
+    time.sleep(user_input)  #user_input this function is responsible for the difficulty set
 
     snake.move()
 
-    # Food collision
+    # Detects Food collision
     if snake.head.distance(food) < 15:  # Measures the distance of the given turtle
         print("Won")
         score.increase_score()
         food.refresh()
         snake.extend()
 
-    # Wall collision
+    # Detects Wall collision
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         game_on = False
         score.game_over()
@@ -57,6 +57,7 @@ while game_on:
             game_on = False
             snake.bye()
 
+   # Detects collision with snake itself except for head
     for segment in snake.segment:
         if segment == snake.head:
             pass
