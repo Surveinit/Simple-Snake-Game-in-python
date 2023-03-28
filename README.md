@@ -17,7 +17,7 @@ How to Run the Game
 
 How to Play the Game
 
-    Use the arrow keys to control the direction of the snake.
+    Use the [WASD] to control the direction of the snake.
     The snake will grow in length every time it eats a piece of food.
     Avoid hitting the walls or the snake's body.
     The game ends when the snake crashes into the wall or into itself.
