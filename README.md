@@ -24,13 +24,13 @@ How to Play the Game
 
 Features
 
-    The game keeps track of the player's score.
-    The player can restart the game after it ends.
-    The game has a simple GUI.
+    - The game keeps track of the player's score.
+    - The player can restart the game after it ends.
+    - The game has a simple GUI.
 
 Credits
 
-This game was built with Python's Turtle module. It was created by [by me itself]. Feel free to use and modify the code for your own projects.
+This game was built with Python's Turtle module. It was created by [by me itself] Thankyou Angela!. Feel free to use and modify the code for your own projects.
 License
 
 This project is licensed under the MIT License.
