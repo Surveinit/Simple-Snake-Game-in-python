@@ -30,7 +30,7 @@ Features
 
 Credits
 
-This game was built with Python's Turtle module. It was created by [Your Name]. Feel free to use and modify the code for your own projects.
+This game was built with Python's Turtle module. It was created by [by me itself]. Feel free to use and modify the code for your own projects.
 License
 
 This project is licensed under the MIT License.
