@@ -47,7 +47,6 @@ while game_on:
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         game_on = False
         score.game_over()
-
         message = screen.textinput(f"Game Over", f"Your score is {score.score_int}. Play again? (y/n)")
 
         # Check user input and act accordingly
@@ -58,10 +57,8 @@ while game_on:
             snake.bye()
 
    # Detects collision with snake itself except for head
-    for segment in snake.segment:
-        if segment == snake.head:
-            pass
-        elif snake.head.distance(segment) < 10:
+    for segment in snake.segment[1:]:
+        if snake.head.distance(segment) < 10:
             game_on = False
             score.game_over()
 
