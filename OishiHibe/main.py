@@ -23,10 +23,10 @@ score = Score()
 
 screen.listen()
 
-screen.onkey(snake.up, "w")
-screen.onkey(snake.left, "a")
-screen.onkey(snake.down, "s")
-screen.onkey(snake.right, "d")
+screen.onkey(snake.up, 'k')
+screen.onkey(snake.left, 'h')
+screen.onkey(snake.down, 'j')
+screen.onkey(snake.right, 'l')
 
 game_on = True
 

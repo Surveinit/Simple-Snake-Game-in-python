@@ -43,16 +43,20 @@ class Snake:
 
     def up(self):
         if self.head.heading() != DOWN:
+            print("Up key pressed")
             self.head.setheading(UP)
 
     def left(self):
         if self.head.heading() != RIGHT:
+            print("Left key pressed")
             self.head.setheading(LEFT)
 
     def down(self):
         if self.head.heading() != UP:
+            print("Down key pressed")
             self.head.setheading(DOWN)
 
     def right(self):
         if self.head.heading() != LEFT:
+            print("Right key pressed")
             self.head.setheading(RIGHT)
