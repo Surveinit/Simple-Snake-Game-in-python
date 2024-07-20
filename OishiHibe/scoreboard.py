@@ -21,7 +21,7 @@ class Score(Turtle):
         self.clear()
         self.write("GAME OVER", align=ALIGNMENT, font=FONT)
         self.goto(0, 240)
-        self.write(f"Score: {self.score_int}", align=ALIGNMENT, font=FONT)
+        # self.write(f"Score: {self.score_int}", align=ALIGNMENT, font=FONT)
 
     def update_scoreboard(self):
         self.color("white")
