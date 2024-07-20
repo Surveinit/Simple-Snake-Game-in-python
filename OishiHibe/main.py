@@ -23,12 +23,24 @@ score = Score()
 
 screen.listen()
 
-screen.onkey(snake.up, 'k')
-screen.onkey(snake.left, 'h')
-screen.onkey(snake.down, 'j')
-screen.onkey(snake.right, 'l')
+def vim_key_bindings():
+    screen.listen()
+    screen.onkey(snake.up, 'k')
+    screen.onkey(snake.left, 'h')
+    screen.onkey(snake.down, 'j')
+    screen.onkey(snake.right, 'l')
 
 game_on = True
+vim_key_bindings()
+
+def reset_game():
+    global snake, food, score, game_on
+    snake.reset()
+    food.refresh()
+    score.game_over()
+    game_on = True
+    vim_key_bindings() 
+
 
 while game_on:
     screen.update()
@@ -52,6 +64,7 @@ while game_on:
         # Check user input and act accordingly
         if message.lower() == "y":
             game_on = True
+            reset_game()
         else:
             game_on = False
             snake.bye()
