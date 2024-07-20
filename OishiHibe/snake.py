@@ -62,14 +62,10 @@ class Snake:
             self.head.setheading(RIGHT)
 
     def reset(self):
-        # Hide and clear existing segments
         for segment in self.segment:
             segment.hideturtle()
         self.segment.clear()
         
-        # Recreate the snake
         self.create_snake()
         self.head = self.segment[0]
-        
-        # Reset the direction to a default value (e.g., RIGHT)
         self.head.setheading(RIGHT)

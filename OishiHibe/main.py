@@ -78,3 +78,7 @@ while game_on:
 screen.exitonclick()
 
 # TODO: Add music uwu after coliding!
+# TODO: Add ENTER keybinding for difficulty prompt
+# TODO: Add requirements.txt
+# TODO: Update README.md
+
